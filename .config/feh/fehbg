@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/sf/images/wallpapers/andre-benz-e4xOmzd8vzg-unsplash.jpg' 

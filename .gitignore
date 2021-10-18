@@ -1,0 +1,128 @@
+# Ignore everything
+*
+
+# But not these files.
+
+!README.md
+
+!.gitignore
+!.gitconfig
+!.gitignore_global
+!.gitattributes_global
+
+!.zshrc
+!.zlogin
+
+!.vimrc
+
+!.xscreensaver
+
+!.xinitrc
+
+!.Xresources
+!.Xdefaults
+!.Xauthority
+
+# And those folders.
+#
+
+!/.git-templates/branches/**
+!/.git-templates/hooks/**
+!/.git-templates/info/**
+!/.git-templates/description
+
+# Scripts
+#
+!.local
+!.local/bin
+# Add all my scripts
+!.local/bin/**
+# Except virtualenv scripts
+.local/bin/virtualenv
+
+# Configs dir
+#
+!.config/
+!.config/autostart
+!.config/autostart/**
+
+# https://ctop.sh/
+!.config/ctop
+!.config/ctop/config
+
+# Notification manager
+!.config/dunst
+!.config/dunst/dunstrc
+
+# Screen manager
+!.config/feh
+!.config/feh/fehbg
+
+# Usefull screenshots
+!.config/flameshot
+!.config/flameshot/flameshot.ini
+
+!.config/fontconfig
+!.config/fontconfig/**
+
+!.config/htop
+!.config/htop/htoprc
+
+!.config/i3
+!.config/i3/workspaces
+!.config/i3/workspaces/**
+!.config/i3/bar.sh
+!.config/i3/config
+
+# https://github.com/jesseduffield/lazydocker
+!.config/lazydocker
+!.config/lazydocker/config.yml
+
+!.config/neofetch
+!.config/neofetch/config.conf
+
+!.config/polybar
+!.config/polybar/config
+!.config/polybar/config-light
+!.config/polybar/launch.sh
+
+
+!.config/ranger
+!.config/ranger/colorschemes
+!.config/ranger/colorschemes/**
+!.config/ranger/commands.py
+!.config/ranger/rc.conf
+!.config/ranger/rifle.conf
+!.config/ranger/shortcuts.conf
+
+!.config/rofi
+!.config/rofi/config
+
+# My env buildings
+#
+!.config/sf.environment
+!.config/sf.environment/alias.d
+!.config/sf.environment/alias.d/**
+!.config/sf.environment/source.d
+!.config/sf.environment/source.d/**
+!.config/sf.environment/variables.d
+!.config/sf.environment/variables.d/**
+!.config/sf.environment/sec_variables.d
+
+!.config/sxhkd
+!.config/sxhkd/sxhkdrc
+
+# https://github.com/srsudar/tmux-completion
+!.config/tmux
+!.config/tmux/ext
+!.config/tmux/ext/tmux-completion
+
+!.config/zsh
+!.config/zsh/zshrc
+
+!.config/mimeapps.list
+
+
+# Ignore so we won't commit these in the allowed dirctories.
+
+.DS_Store
