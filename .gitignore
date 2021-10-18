@@ -54,6 +54,9 @@
 !.config/dunst
 !.config/dunst/dunstrc
 
+!.config/bat
+!.config/bat/config
+
 # Screen manager
 !.config/feh
 !.config/feh/fehbg
