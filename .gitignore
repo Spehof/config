@@ -47,6 +47,14 @@
 !.config/git
 !.config/git/gitconfig
 !.config/git/gitignore_global
+!.config/git/git-templates
+!.config/git/git-templates/description
+!.config/git/git-templates/branches
+!.config/git/git-templates/branches/**
+!.config/git/git-templates/hooks
+!.config/git/git-templates/hooks/**
+!.config/git/git-templates/info
+!.config/git/git-templates/info/**
 
 # https://ctop.sh/
 !.config/ctop
