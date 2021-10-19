@@ -24,11 +24,6 @@
 # And those folders.
 #
 
-!/.git-templates/branches/**
-!/.git-templates/hooks/**
-!/.git-templates/info/**
-!/.git-templates/description
-
 # Scripts
 #
 !.local
