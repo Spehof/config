@@ -6,8 +6,6 @@
 !README.md
 
 !.gitignore
-!.gitconfig
-!.gitignore_global
 !.gitattributes_global
 
 !.zshrc
@@ -45,6 +43,10 @@
 !.config/
 !.config/autostart
 !.config/autostart/**
+
+!.config/git
+!.config/git/gitconfig
+!.config/git/gitignore_global
 
 # https://ctop.sh/
 !.config/ctop
