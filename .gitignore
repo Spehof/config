@@ -32,6 +32,10 @@
 !.local/bin/**
 # Except virtualenv scripts
 .local/bin/virtualenv
+# Config files for navigating in ranger
+!.local/share
+!.local/share/sf.navigate
+!.local/share/sf.navigate/directory
 
 # Configs dir
 #
