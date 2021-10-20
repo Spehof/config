@@ -64,7 +64,7 @@ font-4 = FontAwesome5Brands:style=Solid:pixelsize=10;3
 
 separator = " | "
 
-modules-left = i3 
+modules-left = i3 hostname
 ;modules-right = eth openweathermap-fullfeatured sp2 system-cpu-loadavg sp2  updates-arch-combined sp2 btc-price sp2 usd-price sp2 pub-ip sp2 volume sp2 filesystem sp1 memory sp1 temperature sp2 battery0 sp2  
 modules-right = volume filesystem cpu memory powermenu date
 
@@ -196,6 +196,12 @@ cursor-click = pointer
 ;;label-foreground = ${colors.foreground}
 ;click-left = pcmanfm -n ~/.local/share/Trash/files
 ;click-right = rm -rf ~/.local/share/Trash/files/.??* ;exec notify-send 'Trash cleaned'
+;
+[module/hostname]
+type = custom/script
+exec = /home/sf/.local/bin/polybar/hostname.sh
+interval = 5
+label = %output%
 ;
 ;
 ;[module/test1]
