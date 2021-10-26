@@ -10,6 +10,21 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Fzf plugin for vim
+" https://github.com/junegunn/fzf.vim
+"Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim' 
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
+
+" Plugin 'ierton/xkb-switch'
+" https://github.com/lyokha/vim-xkbswitch
+Plugin 'lyokha/vim-xkbswitch'
+
+" https://vimawesome.com/plugin/vim-airline-superman
+" https://github.com/vim-airline/vim-airline
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -36,6 +51,41 @@ Plugin 'xolox/vim-colorscheme-switcher'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
+
+" Airline config ------------------------------------------------------------
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 10
+let g:Powerline_symbols = 'unicode'
+
+let g:airline_powerline_fonts=1
+let g:gruvbox_contrast_dark="meduim"
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {} 
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
+" Airline end config --------------------------------------------------
 
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -138,6 +188,28 @@ if has("gui_macvim")
   noremap <D-0> :tablast<CR>
 endif
 
+" ---- Automatic keyboard layout switching upon entering/leaving insert mode
+" ---- using xkb-switch utility and plugin xkbswitch
+" ----
+let g:XkbSwitchEnabled = 1
+let g:XkbSwitchIMappings = ['ru']
+let g:XkbSwitchNLayout = 'us'
+let g:XkbSwitchILayout = 'us'
+" loading xkbswitch on BufRead when bufhidden=delete will clash xkbswitch
+" function imappings_load() and plugin EnhancedJumps as soon as both will do
+" redir simultaneously!
+let g:XkbSwitchLoadOnBufRead = 0
+let g:XkbSwitchSkipIMappings =
+            \ {'c'   : ['.', '>', ':', '{<CR>', '/*', '/*<CR>'],
+            \  'cpp' : ['.', '>', ':', '{<CR>', '/*', '/*<CR>']}
+let g:XkbSwitchSkipFt = [ 'conque_term' ]
+let g:XkbSwitchAssistNKeymap = 1    " for commands r and f
+let g:XkbSwitchAssistSKeymap = 1    " for search lines
+let g:XkbSwitchDynamicKeymap = 1
+let g:XkbSwitchKeymapNames = {'ru' : 'russian-jcukenwin'}
+
+
+" Prefer font and colorscheme
 set guifont=Monaco:h18
 colorscheme OceanicNext
 
