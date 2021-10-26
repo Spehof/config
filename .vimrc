@@ -164,6 +164,9 @@ set hidden
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
 
+" unset finding highlits
+nnoremap <C-L> :noh<CR>
+
 " Выключаем звук в Vim
 set visualbell t_vb=
 
