@@ -44,7 +44,7 @@
 !.config/autostart/**
 
 !.config/git
-!.config/git/gitconfig
+!.config/git/config
 !.config/git/gitignore_global
 !.config/git/git-templates
 !.config/git/git-templates/description
