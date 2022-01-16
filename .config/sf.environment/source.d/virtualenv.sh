@@ -1,2 +1,2 @@
-source $HOME/.local/bin/virtualenv/virtualenvwrapper.sh
+source $HOME/.local/bin/virtualenvwrapper.sh
 

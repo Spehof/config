@@ -66,7 +66,7 @@ separator = " | "
 
 modules-left = i3 hostname
 ;modules-right = eth openweathermap-fullfeatured sp2 system-cpu-loadavg sp2  updates-arch-combined sp2 btc-price sp2 usd-price sp2 pub-ip sp2 volume sp2 filesystem sp1 memory sp1 temperature sp2 battery0 sp2  
-modules-right = volume filesystem cpu memory powermenu date
+modules-right = xkeyboard volume filesystem cpu memory powermenu date
 
 
 ;modules-left = i3 wlan sp2 trash sp2 fs1 sp2 fs2 sp2 fs3 sp2 fs4 sp2 btcrub sp2 hum1 sp2 hum2 updates-arch-combined
@@ -88,7 +88,7 @@ tray-offset-y = 0
 ;wm-restack = bspwm
 wm-restack = i3
 
-;override-redirect = true
+#override-redirect = true
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
@@ -403,8 +403,11 @@ blacklist-0 = num lock
 blacklist-1 = scroll lock
 
 ;format = <label-layout><label-indicator>
-format = <label-indicator>
+format = <label-layout>
 format-spacing = 0
+layout-icon-0 = us;EN
+layout-icon-1 = ru;RU
+
 
 ;format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
@@ -732,7 +735,6 @@ menu-2-1-exec = menu-open-0
 [settings]
 throttle-output = 5
 throttle-output-for = 10
-throttle-input-for = 30
 screenchange-reload = true
 compositing-background = over
 compositing-foreground = over
