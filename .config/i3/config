@@ -239,8 +239,8 @@ bindsym $mod+Shift+p exec gnome-calculator
 
 exec_always setxkbmap -option grp:caps_toggle "us,ru" -option grp_led:caps
 
-exec xrandr --output HDMI-1 --mode 3840x2160 --scale 0.5x0.5 --right-of HDMI-3
-exec xrandr --auto --output HDMI-3 --mode 1366x768 --left-of HDMI-1
+exec xrandr --output HDMI-1 --mode 3840x2160 --scale 0.5x0.5 --left-of HDMI-3
+exec xrandr --auto --output HDMI-3 --mode 1366x768 --right-of HDMI-1
 
 exec pa-applet
 exec_always nm-applet
