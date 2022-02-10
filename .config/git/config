@@ -5,7 +5,7 @@
 [core]
 	editor = vim
 	excludesfile = ~/.config/git/gitignore_global
-    pager = cat
+	pager = diff-so-fancy | less --tabs=4 -RFX
 
 [color]
     ui = always
@@ -284,3 +284,5 @@
 
 [gpg]
 #	program = gpg2
+[interactive]
+	diffFilter = diff-so-fancy --patch
