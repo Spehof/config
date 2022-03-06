@@ -119,7 +119,8 @@
 !.config/sf.environment/source.d/**
 !.config/sf.environment/variables.d
 !.config/sf.environment/variables.d/**
-.config/sf.environment/variables.d/my_servers.sh
+.config/sf.environment/variables.d/servers.sh
+.config/sf.environment/alias.d/servers.sh
 !.config/sf.environment/sec_variables.d
 
 !.config/sxhkd
