@@ -279,6 +279,7 @@
 	helper = cache
 [init]
 	templatedir = ~/.config/git/git-templates
+	defaultBranch = master
 [commit]
 #   gpgsign = true
 
