@@ -30,6 +30,8 @@
 !.local/bin
 # Add all my scripts
 !.local/bin/**
+# exclude confluence hub
+.local/bin/confluent-hub
 # Except virtualenv scripts
 .local/bin/virtualenv
 # Config files for navigating in ranger
