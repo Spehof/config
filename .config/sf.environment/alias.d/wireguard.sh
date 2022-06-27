@@ -1,2 +1,2 @@
-alias wgd='sudo systemctl stop wg-quick@arch'
-alias wgu='sudo systemctl start wg-quick@arch'
+alias wd='sudo systemctl stop wg-quick@arch'
+alias wu='sudo systemctl start wg-quick@arch'
